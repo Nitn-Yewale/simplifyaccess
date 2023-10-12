@@ -22,25 +22,25 @@
 
 import os
 
-print ("\n\t Session recordings : \n")
+print ("\n\t github repos : \n")
 
-sessionrecordings =	[
+mygithubrepos =	[
 
 # Instructions : for user
 # Fill the data in the format
 # ["number", "alias", "command"]
 
-["1", "NVMeoFC",
-"xdg-open https://drive.google.com/file/d/12odjIg3O3KZvIpxqc-pAbnGut6zj9_qV/view?ts=60492da9"],
-["2", "Oracle Tuning", "xdg-open https://drive.google.com/file/d/1-FJmGYcRoLEetLkSkA8Tih-Vd10cRqEj/view"],
+["1", "github_systeminfo",
+"xdg-open https://github.com/NitinYewale/systeminfo"],
+["2", "upstream_sos", "xdg-open https://github.com/sosreport/sos"],
 
 ["\n\t  e", "exit", "exit"]
 
 ]
 
 
-for x in range(len(sessionrecordings)):
-	print("\t  {}.  \t {}".format(sessionrecordings[x][0], sessionrecordings[x][1]))
+for x in range(len(mygithubrepos)):
+	print("\t  {}.  \t {}".format(mygithubrepos[x][0], mygithubrepos[x][1]))
 
 try:
 	val = input("\nEnter your value: ")
@@ -59,7 +59,7 @@ def search(list, n):
 			return True
 	return False
 
-if search(sessionrecordings, val):
-	os.system(sessionrecordings[v][2])
+if search(mygithubrepos, val):
+	os.system(mygithubrepos[v][2])
 else :
 	print("Invalid Input ..")
